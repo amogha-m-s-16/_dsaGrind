@@ -32,6 +32,8 @@ private:
     }
 public:
     int maximalRectangle(vector<vector<char>>& matrix) {
+        if(matrix.empty() || matrix[0].empty()) return 0;
+
         int maxArea = 0;
         vector<int> preSum(matrix[0].size(), 0);
 
